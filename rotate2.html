@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        debugger
+        function rotLeft(a, d) {
+        var arr = [];
+        var l = 0;
+        for(let i=0;i<a.length;i++){
+        if(i >= d){ 
+            arr[i-d] = a[i]
+        }else{
+            arr[a.length-d+l] = a[i];
+            l = i+1;
+            }
+        }
+        return arr
+    }
+    const ar = [8,1,2,3,5,4,5,6,4,7,8,9]
+    const ad = 8;
+    console.log(rotLeft(ar,ad))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
